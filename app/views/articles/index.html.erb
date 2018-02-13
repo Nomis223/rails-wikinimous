@@ -1,0 +1,9 @@
+<h1>REAL DEEP STUFF</h1>
+
+<%= link_to 'Add a Article',  new_article_path%>
+
+<% @articles.each do |f|%>
+  <h3>-<%= link_to f.title, show_path(f) %></h3>
+<% end %>
+
+
